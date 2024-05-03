@@ -119,7 +119,7 @@ export const BlockRenderer = ({ blocks }) => {
       }
       case "core/column": {
         return (
-          <Column key={block.id} width={block.attributes} >
+          <Column key={block.id} width={block.attributes?.width} >
             <BlockRenderer blocks={block.innerBlocks} />
           </Column>
         );
